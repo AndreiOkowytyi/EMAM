@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>image_module/bolted_connection.jpg</file>
+        <file>image_module/beam_1.jpg</file>
+        <file>image_module/beam_2.jpg</file>
+        <file>image_module/beam_3.jpg</file>
+        <file>image_module/section_1.jpg</file>
+        <file>image_module/section_2.jpg</file>
+        <file>image_module/section_3.jpg</file>
+        <file>image_module/section_4.jpg</file>
+        <file>image_module/section_5.jpg</file>
+        <file>image_module/section_6.jpg</file>
+        <file>image_module/section_7.jpg</file>
+        <file>image_module/section_8.jpg</file>
+        <file>image_module/section_9.jpg</file>
+        <file>window/close_active.jpg</file>
+        <file>window/close_passive.jpg</file>
+        <file>window/collapse_button_active.jpg</file>
+        <file>window/collapse_button_passive.jpg</file>
+        <file>window/frame_1.jpg</file>
+        <file>window/frame_2.jpg</file>
+        <file>image_module/back_active.jpg</file>
+        <file>image_module/back_passive.jpg</file>
+        <file>window/application_icon_.jpg</file>
+        <file>image_module/bolted_connection_01.jpg</file>
+        <file>image_module/setting_active.jpg</file>
+        <file>image_module/setting_passive.jpg</file>
+        <file>image_module/disk_.jpg</file>
+        <file>image_module/paw_cultivators_.jpg</file>
+    </qresource>
+</RCC>

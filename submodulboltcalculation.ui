@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BoltCalculation</class>
+ <widget class="QWidget" name="BoltCalculation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>530</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>600</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>600</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="palette">
+   <palette>
+    <active/>
+    <inactive/>
+    <disabled/>
+   </palette>
+  </property>
+  <property name="windowTitle">
+   <string>EMAM</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/new/prefix1/window/application_icon_.jpg</normaloff>:/new/prefix1/window/application_icon_.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="main_widget_" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>530</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="scheme_">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>90</y>
+      <width>160</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/new/prefix1/image_module/bolted_connection.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="estimation_">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>160</y>
+      <width>112</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Произвести расчет</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="group_type_load_">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>269</y>
+      <width>141</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Тип работы соединения</string>
+    </property>
+    <widget class="QRadioButton" name="rupture_">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>20</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>На разрыв</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="shear_">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>40</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>На срез</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QComboBox" name="metric_strength_class_">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>180</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>3.6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4.6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4.8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5.6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5.8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>6.6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>6.8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>8.8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>9.8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>10.9</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>12.9</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_strength_class_">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Класс прочности</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="close_">
+    <property name="geometry">
+     <rect>
+      <x>505</x>
+      <y>5</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="collapse_">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>5</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="inch_strength_class_">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>70</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>8</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="nut_length_">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>238</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_nut_length_">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>238</y>
+      <width>110</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Длина гайки L, мм</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="type_size_inch_fasteners_">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>100</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>1/8&quot;</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1/4&quot;</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3/8&quot;</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1/2&quot;</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5/8&quot;</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3/4&quot;</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1&quot;</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1 1/4&quot;</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1 1/2&quot;</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2&quot;</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QToolButton" name="settings_fasteners_calculation_">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>68</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="thread_type_">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>212</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="back_">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>35</y>
+      <width>39</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>55</x>
+      <y>35</y>
+      <width>40</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Назад</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="module_design_information_">
+    <property name="geometry">
+     <rect>
+      <x>148</x>
+      <y>65</y>
+      <width>201</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Метрический крепеж-Расчет</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clear_fields_">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>210</y>
+      <width>112</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Очистить поля</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_thread_type_">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>209</y>
+      <width>90</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Уст. шаг резьбы</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="margin_of_safety_">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>339</y>
+      <width>45</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_margin_of_safety_">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>339</y>
+      <width>151</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Запас прочности крепежа</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="upper_band_">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>600</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>290</y>
+      <width>240</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Результат расчета</string>
+    </property>
+    <widget class="QLabel" name="settlement_information_fasteners_">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>20</y>
+       <width>170</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Запас прочности соединения :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="result_calculation_">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>20</y>
+       <width>55</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="message_result_calculation_">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>21</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Увеличьте количество крепежа.</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>124</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Количество болт. шт.</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="number_bolt_">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>124</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="botton_hand_">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>370</y>
+      <width>530</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Ошибка! Данные введены неверно.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="name_program_">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>EMAM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_type_size_fasteners_">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>153</y>
+      <width>42</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Крепеж</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="type_size_metric_fasteners_">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>153</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>М6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М12</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М14</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М16</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М18</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М20</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М22</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М24</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М27</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М30</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М33</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М36</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М39</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М40</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М42</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М45</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М48</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М52</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М55</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М56</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М60</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М62</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М64</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М65</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М68</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М70</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М72</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М75</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М76</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М80</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М85</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М90</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М95</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М100</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М105</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М110</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М115</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М120</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М125</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>М130</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="load_fasteners_">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>95</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>96</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Нагрузка F, Н</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="set_thread_pitch_">
+    <property name="geometry">
+     <rect>
+      <x>148</x>
+      <y>210</y>
+      <width>30</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>65</y>
+      <width>71</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Настройки :</string>
+    </property>
+   </widget>
+   <zorder>label_type_size_fasteners_</zorder>
+   <zorder>type_size_metric_fasteners_</zorder>
+   <zorder>load_fasteners_</zorder>
+   <zorder>label_12</zorder>
+   <zorder>upper_band_</zorder>
+   <zorder>scheme_</zorder>
+   <zorder>estimation_</zorder>
+   <zorder>group_type_load_</zorder>
+   <zorder>metric_strength_class_</zorder>
+   <zorder>label_strength_class_</zorder>
+   <zorder>close_</zorder>
+   <zorder>collapse_</zorder>
+   <zorder>inch_strength_class_</zorder>
+   <zorder>nut_length_</zorder>
+   <zorder>label_nut_length_</zorder>
+   <zorder>type_size_inch_fasteners_</zorder>
+   <zorder>settings_fasteners_calculation_</zorder>
+   <zorder>thread_type_</zorder>
+   <zorder>back_</zorder>
+   <zorder>label_8</zorder>
+   <zorder>module_design_information_</zorder>
+   <zorder>clear_fields_</zorder>
+   <zorder>label_thread_type_</zorder>
+   <zorder>margin_of_safety_</zorder>
+   <zorder>label_margin_of_safety_</zorder>
+   <zorder>groupBox_3</zorder>
+   <zorder>label_21</zorder>
+   <zorder>number_bolt_</zorder>
+   <zorder>botton_hand_</zorder>
+   <zorder>name_program_</zorder>
+   <zorder>set_thread_pitch_</zorder>
+   <zorder>label_2</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
